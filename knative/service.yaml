@@ -1,0 +1,14 @@
+apiVersion: serving.knative.dev/v1
+kind: Service
+metadata:
+  name: node-yaml-service
+  namespace: serverless-workload
+spec:
+  template:
+    metadata:
+      name: node-yaml-service-v1
+    spec:
+      containers:
+        - image: docker.io/avik6028/nodejs-image-demo
+          ports:
+            - containerPort: 8080
