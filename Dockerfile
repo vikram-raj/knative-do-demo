@@ -1,6 +1,6 @@
 FROM node:10-alpine
 
-ENV PORT 5000
+ENV PORT 6000
 
 RUN mkdir -p /home/node/app/node_modules && chown -R node:node /home/node/app
 
